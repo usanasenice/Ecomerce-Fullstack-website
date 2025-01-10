@@ -39,7 +39,7 @@ export const signUpAccount = async function (requestData) {
 
 export const signInAccount = async function (requestData) {
   const { data } = await axios.post(
-    `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDb39hZDduK_nXXUzbXN24ru6XLmiZa9Ao`,
+    `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=API_KEY`,
     {
       email: requestData.email,
       password: requestData.password,
