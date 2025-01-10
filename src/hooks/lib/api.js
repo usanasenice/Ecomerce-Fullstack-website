@@ -27,7 +27,7 @@ export const fetchComment = async function (productId) {
 
 export const signUpAccount = async function (requestData) {
   const { data } = await axios.post(
-    `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDb39hZDduK_nXXUzbXN24ru6XLmiZa9Ao`,
+    `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=API_KEY`,
     {
       email: requestData.email,
       password: requestData.password,
